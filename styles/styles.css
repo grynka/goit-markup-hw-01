@@ -12,6 +12,13 @@ h1 {
     letter-spacing: 0.06em;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
 .header {
     display: -webkit-inline-box;
     padding: 25px 0px 25px 215px;
@@ -20,7 +27,7 @@ h1 {
 .header a {
     text-decoration: none;
     font-size: 14px;
-    vertical-align: -webkit-baseline-middle;
+    vertical-align: sub;
 }
 
 a.logo {
@@ -46,8 +53,7 @@ ul {
     display: -webkit-inline-box;
     font-size: 14px;
     font-weight: 500;
-    vertical-align: -webkit-baseline-middle;
-}
+    }
 
 li {
     margin-right: 50px;
@@ -61,13 +67,13 @@ li>a:hover {
     color: #2196F3;
 }
 
-[href^="mailto:"] {
+.mail {
     margin-left: 330px;
     margin-right: 50px;
     color: #2196F3;
 }
 
-[href^="tel:"] {
+.tel {
     color: #757575;
 }
 .banner {
@@ -91,8 +97,34 @@ li>a:hover {
     border: none;
 }
 
+.qualities {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 95px 0;
+}
+
+.qualities .block {
+    text-align: left;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+    padding-right: 25px;
+}
+
+.block span {
+    color: #212121;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .about {
     text-align: center;
+    margin: 0 auto;
+}
+
+.about img {
+    margin: 0 15px;
 }
 
 .person {
@@ -100,7 +132,7 @@ li>a:hover {
 }
 
 .block {
-    margin: 15px;
+    margin: 0 15px;
     background-color: white;
     text-align: center;
 }
@@ -112,8 +144,22 @@ li>a:hover {
     padding: 95px 0;
 }
 
+p.name {
+    padding-top: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+}
+
+p.position {
+    font-weight: 400;
+    color: #757575;
+    margin: 9px 0 30px 0;
+}
+
 .footer {
     background-color: #2F303A;
+    padding: 60px 200px;
 }
 
 a.logofooter {
@@ -122,4 +168,25 @@ a.logofooter {
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
+    padding-bottom: 20px;
+}
+
+address {
+    display: grid;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+address p {
+    margin: 0;
+}
+
+address a {
+    margin-top: 9px;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.6;
 }
